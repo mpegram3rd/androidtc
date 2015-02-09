@@ -40,8 +40,14 @@ public class HelloActivity extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
+        if (id == R.id.action_history) {
+            System.out.println("Action HISTORY");
+            return true;
+        }
+
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_exit) {
+            System.out.println("Action EXIT");
             return true;
         }
 
